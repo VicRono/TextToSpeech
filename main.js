@@ -26,6 +26,7 @@ const getVoices = () => {
 
     //Set needed attributes
     option.setAttributes('data-lang', voice.lang);
+    option.setAttributes('data-name', voice.name);
   });
 };
 
