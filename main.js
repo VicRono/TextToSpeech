@@ -72,5 +72,8 @@ const speak = () => {
     //Set pitch and rate
     speakText.rate = rate.value;
     speakText.pitch = pitch.value;
+
+    //speak
+    synth.speak(speakText);
   }
 }
