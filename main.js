@@ -68,6 +68,8 @@ const speak = () => {
         speakText.voice = voice;
       }
     });
-    
+
+    //Set pitch and rate
+    speakText.rate = rate.value;
   }
 }
