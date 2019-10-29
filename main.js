@@ -57,5 +57,17 @@ const speak = () => {
     speakText.onerror = e => {
       console.error('Oops! Something went wrong..');
     }
+
+    //Select voice to speak
+    const selectedVoice = voiceSelect.selectedOptions[0]
+    .getAttribute('data-name');
+
+    //Loop through voices
+    voices.forEach(voice => {
+      if (voice.name === selectedVoice) {
+        speakText.voice = voice;
+      }
+    });
+    
   }
 }
