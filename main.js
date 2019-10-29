@@ -47,6 +47,10 @@ const speak = () => {
   if (textInput.value !== '') {
     //Get speak text
     const speakText = new SpeechSynthesisUtterance(textInput.value);
-    
+
+    //End Speak
+    speakText.onend = e => {
+      console.log('Done speaking...');
+    }
   }
 }
