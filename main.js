@@ -71,5 +71,6 @@ const speak = () => {
 
     //Set pitch and rate
     speakText.rate = rate.value;
+    speakText.pitch = pitch.value;
   }
 }
