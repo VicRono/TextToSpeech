@@ -18,8 +18,9 @@ const getVoices = () => {
 
   //Loop through voices and create an option for each
   voices.forEach(voice => {
-
-  })
+    //create option element
+    const opotion = document.createElement('option';)
+  });
 };
 
 getVoices();
