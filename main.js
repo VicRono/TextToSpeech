@@ -52,5 +52,10 @@ const speak = () => {
     speakText.onend = e => {
       console.log('Done speaking...');
     }
+
+    //Error while speaking
+    speakText.onerror = e => {
+      console.error('Oops! Something went wrong..');
+    }
   }
 }
