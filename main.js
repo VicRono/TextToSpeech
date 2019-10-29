@@ -15,7 +15,11 @@ let voices = [];
 
 const getVoices = () => {
   voices =synth.getVoices();
-  console.log(voices);
+
+  //Loop through voices and create an option for each
+  voices.forEach(voice => {
+
+  })
 };
 
 getVoices();
