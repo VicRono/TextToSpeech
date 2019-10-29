@@ -14,7 +14,7 @@ const pitchValue = document.querySelector('#pitch-value');
 let voices = [];
 
 const getVoices = () => {
-  voices =synth.getVoices();
+  voices = synth.getVoices();
 
   //Loop through voices and create an option for each
   voices.forEach(voice => {
@@ -27,10 +27,17 @@ const getVoices = () => {
     //Set needed attributes
     option.setAttributes('data-lang', voice.lang);
     option.setAttributes('data-name', voice.name);
+    voiceSelect.appendChild(option);
+
   });
 };
 
 getVoices();
 if(synth.onvoiceschanged !== undefined){
   synth.onvoiceschanged = getVoices;
+}
+
+//Speak
+const speak = () => {
+  
 }
