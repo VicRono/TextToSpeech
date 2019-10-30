@@ -76,7 +76,7 @@ const speak = () => {
     //speak
     synth.speak(speakText);
   }
-<<<<<<< HEAD
+
 };
 
 //Event Listeners
@@ -86,7 +86,8 @@ textForm.addEventListener('submit', e => {
   e.preventDefault();
   speak();
   textInput.blur();
-})
-=======
-}
->>>>>>> 8a770bc9ec64888bef30c5c81ea0a4089add54b2
+});
+
+//Change rate value
+rate.addEventListener('change', e => rateValue.textContent =
+rate.value)
