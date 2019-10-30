@@ -95,3 +95,6 @@ rate.value);
 //Change pitch value
 pitch.addEventListener('change', e => pitchValue.textContent =
 pitch.value);
+
+//Speak again once pitch and rate change
+voiceSelect.addEventListener('change', e => speak());
