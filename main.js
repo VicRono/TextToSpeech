@@ -76,6 +76,7 @@ const speak = () => {
     //speak
     synth.speak(speakText);
   }
+<<<<<<< HEAD
 };
 
 //Event Listeners
@@ -86,3 +87,6 @@ textForm.addEventListener('submit', e => {
   speak();
   textInput.blur();
 })
+=======
+}
+>>>>>>> 8a770bc9ec64888bef30c5c81ea0a4089add54b2
